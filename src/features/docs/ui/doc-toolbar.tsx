@@ -19,6 +19,7 @@ import { Separator } from "@/shared/shadcn-ui/separator"
 import { useEditorStore } from "../store/use-editor-store"
 import { DocToolbarButton } from "./doc-toolbar-button"
 import { FontFamilyButton } from "./font-family-button"
+import { HeadingLevelButton } from "./heading-level-button"
 
 export const DocToolbar = () => {
   // const func__ = "DocToolbar"
@@ -106,7 +107,7 @@ export const DocToolbar = () => {
       <Separator orientation="vertical" className="min-h-6 bg-neutral-300" />
       <FontFamilyButton />
       <Separator orientation="vertical" className="min-h-6 bg-neutral-300" />
-      {/* TODO: Heading */}
+      <HeadingLevelButton />
       <Separator orientation="vertical" className="min-h-6 bg-neutral-300" />
       {/* TODO: Font size */}
       {sections[1].map(item => (
